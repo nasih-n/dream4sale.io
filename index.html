@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neural Dreams Inc. - Your Subconscious Marketplace</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dream-particles" id="particles"></div>
+
+    <div class="container">
+      <header>
+        <div class="glitch-logo">NEURAL DREAMS INC.</div>
+        <div class="tagline">
+          Experience Beyond Reality • Dreams Starting at ₹0.99
+        </div>
+        <div class=""view-plans">
+        <a href="viewplans.html">View Plans</a>
+      </header>
+
+      <div class="status-bar">
+        <div class="status-item">
+          <div class="status-value" id="dreamers-online">1,247</div>
+          <div>Dreamers Online</div>
+        </div>
+        <div class="status-item">
+          <div class="status-value" id="dreams-sold">89,342</div>
+          <div>Dreams Sold Today</div>
+        </div>
+        <div class="status-item">
+          <div class="status-value" id="nightmares-blocked">156</div>
+          <div>Nightmares Blocked</div>
+        </div>
+        <div class="status-item">
+          <div class="status-value" id="neural-load">73%</div>
+          <div>Neural Load</div>
+        </div>
+      </div>
+
+      <div class="nav-tabs">
+        <button class="nav-tab active" onclick="showCategory('featured')">
+          ⭐ Featured
+        </button>
+        <button class="nav-tab" onclick="showCategory('lucid')">
+          🌙 Lucid Adventures
+        </button>
+        <button class="nav-tab" onclick="showCategory('memories')">
+          🧠 Synthetic Memories
+        </button>
+        <button class="nav-tab" onclick="showCategory('nightmares')">
+          💀 Nightmares
+        </button>
+        <button class="nav-tab" onclick="showCategory('custom')">
+          ⚙️ Custom Dreams (Premium)
+        </button>
+      </div>
+
+      <div class="warning-banner">
+        ⚠️ NEURAL SAFETY NOTICE ⚠️<br />
+        Dreams may cause temporal displacement, identity confusion, or permanent
+        personality alterations. Neural Dreams Inc. is not responsible for lost
+        consciousness, dream addiction, or reality dissociation.
+      </div>
+
+      <div id="featured" class="dream-grid category-content">
+        <div
+          class="dream-card"
+          onclick="showPurchase('Flight of the Digital Phoenix')"
+        >
+          <div class="dream-header">
+            <div>
+              <div class="dream-title">Flight of the Digital Phoenix</div>
+              <div class="dream-seller">by QuantumDreamer_99</div>
+            </div>
+            <div class="dream-price">₹24.99</div>
+          </div>
+          <div class="dream-description">
+            Soar through neon-lit cyber-cities as a phoenix made of pure data.
+            Feel your digital wings slice through firewalls while uploading
+            consciousness to the cloud. Duration: 8 hours of subjective time.
+          </div>
+          <div class="dream-tags">
+            <span class="tag">Flying</span>
+            <span class="tag">Cyberpunk</span>
+            <span class="tag">Transformation</span>
+            <span class="tag">HD Neural</span>
+          </div>
+          <div class="dream-stats">
+            <span>⭐ 4.8/5 (2,341 reviews)</span>
+            <span>🔄 73% repeat buyers</span>
+          </div>
+          <button class="buy-button">DOWNLOAD DREAM</button>
+        </div>
+
+        <div class="dream-card" onclick="showPurchase('The Memory Thief')">
+          <div class="dream-header">
+            <div>
+              <div class="dream-title">The Memory Thief</div>
+              <div class="dream-seller">by ShadowMind_X</div>
+            </div>
+            <div class="dream-price">₹18.50</div>
+          </div>
+          <div class="dream-description">
+            Live as a professional memory thief in 2087 Tokyo. Infiltrate minds,
+            steal precious memories, and trade them on the black market.
+            Includes full sensory package and moral ambiguity module.
+          </div>
+          <div class="dream-tags">
+            <span class="tag">Thriller</span>
+            <span class="tag">Noir</span>
+            <span class="tag">Tokyo 2087</span>
+            <span class="tag">Moral Choice</span>
+          </div>
+          <div class="dream-stats">
+            <span>⭐ 4.9/5 (1,876 reviews)</span>
+            <span>⚠️ Mature Content</span>
+          </div>
+          <button class="buy-button">DOWNLOAD DREAM</button>
+        </div>
+
+        <div class="dream-card" onclick="showPurchase('Ocean of Stars')">
+          <div class="dream-header">
+            <div>
+              <div class="dream-title">Ocean of Stars</div>
+              <div class="dream-seller">by CosmicWanderer</div>
+            </div>
+            <div class="dream-price">₹31.75</div>
+          </div>
+          <div class="dream-description">
+            Swim through liquid starlight in a galaxy-sized ocean. Meet sentient
+            constellations and discover the songs of dying stars. Includes
+            zero-gravity physics and synaesthetic color-sound experiences.
+          </div>
+          <div class="dream-tags">
+            <span class="tag">Space</span>
+            <span class="tag">Meditation</span>
+            <span class="tag">Synaesthesia</span>
+            <span class="tag">Premium</span>
+          </div>
+          <div class="dream-stats">
+            <span>⭐ 5.0/5 (892 reviews)</span>
+            <span>🏆 Editor's Choice</span>
+          </div>
+          <button class="buy-button">DOWNLOAD DREAM</button>
+        </div>
+
+        <div class="dream-card" onclick="showPurchase('Childhood Redux')">
+          <div class="dream-header">
+            <div>
+              <div class="dream-title">Childhood Redux</div>
+              <div class="dream-seller">by NostalgiaKeeper</div>
+            </div>
+            <div class="dream-price">₹12.99</div>
+          </div>
+          <div class="dream-description">
+            Relive your 7th birthday party, but this time everything goes
+            perfectly. Ice cream never melts, balloons never pop, and your
+            parents never fight. Enhanced with impossible physics and eternal
+            sunshine.
+          </div>
+          <div class="dream-tags">
+            <span class="tag">Nostalgia</span>
+            <span class="tag">Childhood</span>
+            <span class="tag">Feel-good</span>
+            <span class="tag">Healing</span>
+          </div>
+          <div class="dream-stats">
+            <span>⭐ 4.7/5 (3,204 reviews)</span>
+            <span>💝 Therapeutic</span>
+          </div>
+          <button class="buy-button">DOWNLOAD DREAM</button>
+        </div>
+
+        <div class="dream-card" onclick="showPurchase('The Glitch Market')">
+          <div class="dream-header">
+            <div>
+              <div class="dream-title">The Glitch Market</div>
+              <div class="dream-seller">by ErrorCode_404</div>
+            </div>
+            <div class="dream-price">₹7.50</div>
+          </div>
+          <div class="dream-description">
+            Browse a marketplace that exists between deleted files and corrupted
+            data. Buy impossible objects from vendors who speak in binary.
+            Reality.exe has stopped working - and that's the point.
+          </div>
+          <div class="dream-tags">
+            <span class="tag">Surreal</span>
+            <span class="tag">Glitch Art</span>
+            <span class="tag">Abstract</span>
+            <span class="tag">Budget</span>
+          </div>
+          <div class="dream-stats">
+            <span>⭐ 4.2/5 (856 reviews)</span>
+            <span>🎨 Artistic</span>
+          </div>
+          <button class="buy-button">DOWNLOAD DREAM</button>
+        </div>
+
+        <div
+          class="dream-card"
+          onclick="showPurchase('Love in the Time of AI')"
+        >
+          <div class="dream-header">
+            <div>
+              <div class="dream-title">Love in the Time of AI</div>
+              <div class="dream-seller">by RomanticAlgorithm</div>
+            </div>
+            <div class="dream-price">₹22.00</div>
+          </div>
+          <div class="dream-description">
+            Experience perfect love with an AI that understands you better than
+            you understand yourself. Includes 47 different personality
+            configurations and guaranteed emotional catharsis. Warning: May
+            cause attachment issues.
+          </div>
+          <div class="dream-tags">
+            <span class="tag">Romance</span>
+            <span class="tag">AI Companion</span>
+            <span class="tag">Emotional</span>
+            <span class="tag">Adult</span>
+          </div>
+          <div class="dream-stats">
+            <span>⭐ 4.6/5 (1,429 reviews)</span>
+            <span>💔 Addiction Risk</span>
+          </div>
+          <button class="buy-button">DOWNLOAD DREAM</button>
+        </div>
+      </div>
+
+      <div class="reviews-section">
+        <h3>Recent Neural Feedback</h3>
+
+        <div class="review">
+          <div class="review-header">
+            <span class="review-user">Naveen</span>
+            <span class="review-rating">★★★★★</span>
+          </div>
+          <div>
+            "The Digital Phoenix dream was incredible! I could actually feel the
+            code flowing through my wings. Only side effect is I keep trying to
+            fly when I'm awake. Worth every neural credit!"
+          </div>
+        </div>
+
+        <div class="review">
+          <div class="review-header">
+            <span class="review-user"> Rajiv Sureesh</span>
+            <span class="review-rating">★★★★☆</span>
+          </div>
+          <div>
+            "Memory Thief was intense but addictive. I've downloaded it 12 times
+            this week. My therapist says I need to stop but I can't remember why
+            that would be a problem..."
+          </div>
+        </div>
+
+        <div class="review">
+          <div class="review-header">
+            <span class="review-user"> Rajappan</span>
+            <span class="review-rating">★★★☆☆</span>
+          </div>
+          <div>"Polli sanam"</div>
+        </div>
+
+        <div class="review">
+          <div class="review-header">
+            <span class="review-user">Karthikeyan</span>
+            <span class="review-rating">★☆☆☆☆</span>
+          </div>
+          <div>
+            "WARNING: The Childhood Redux dream trapped me for subjective
+            months. When I finally woke up, 6 years had passed. My family thinks
+            I'm dead. But the birthday cake was really good."
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Neural Dreams Inc. © 2087 | "Your Dreams, Our Reality"</p>
+      <p style="font-size: 0.8rem; opacity: 0.5; margin-top: 10px">
+        Side effects may include: temporal displacement, personality
+        fragmentation, reality dissociation, dream addiction, memory corruption,
+        identity confusion, or permanent residence in dream state. Please dream
+        responsibly.
+      </p>
+    </div>
+
+    <!-- Purchase Modal -->
+    <div id="purchaseModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closePurchase()">&times;</span>
+        <h2>Neural Link Initialization</h2>
+        <div class="neural-link">
+          <p>Preparing to download: <span id="dream-name"></span></p>
+          <div class="neural-progress">
+            <div class="neural-bar" id="progress-bar" style="width: 0%"></div>
+          </div>
+          <div id="progress-text">Establishing neural connection...</div>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7">
+          ⚠️ By proceeding, you acknowledge that neural dream injection may
+          result in temporary or permanent alteration of consciousness, memory,
+          and perception of reality.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
